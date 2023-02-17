@@ -1,0 +1,80 @@
+version: "3.9"
+
+services:
+  api:
+    container_name: api
+    build: ./plugin-store-api
+    ports:
+      - "5100:3000"
+    depends_on:
+      - db
+      - wpdb
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASS=qwerty123
+      - DB_NAME=plugin-store
+      - WP_DB_HOST=192.168.33.36
+      - WP_DB_PORT=3306
+      - WP_DB_USER=root
+      - WP_DB_PASS=
+      - WP_DB_NAME=site
+      - JWT_SECRET=vZiXOo3r7IgFtLh3TVtuiKxVtXfqMlAs
+      - LICENSE_URL=http://192.168.10.46:10100
+      - WOOCOMMERCE_API_URL=http://192.168.33.36
+      - WOOCOMMERCE_CK=ck_89d8131a07a210506395135c6ab8d76495d64c46
+      - WOOCOMMERCE_CS=cs_a795dba750fd2b2990fde4672ced880777d3908d
+
+  db:
+    container_name: postgres
+    image: postgres:15.1-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: "plugin-store"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "qwerty123"
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    ports:
+      - "8080:8080"
+  
+  wordpress:
+    container_name: wordpress
+    image: mailpoet/wordpress:wp-6.1_php8.1_20201122.1
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: wpdb
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: qwerty123
+      WORDPRESS_DB_NAME: wordpressdb
+    volumes:
+      - wordpress:/var/www/html
+      - ./restly:/var/www/html/wp-content/themes/restly
+      - ./php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - wpdb
+
+  wpdb:
+    container_name: mysql
+    image: mysql:8.0.32
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: wordpressdb
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: qwerty123
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - wpdb:/var/lib/mysql
+  
+volumes:
+  db:
+  wpdb:
+  wordpress:

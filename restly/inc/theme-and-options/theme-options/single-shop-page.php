@@ -1,0 +1,121 @@
+<?php
+//Single Shop Page Options
+CSF::createSection($restlyThemeOption, array(
+    'parent' => 'restly_shop_options',
+    'title'  => esc_html__('Single Shop Page', 'restly'),
+    'icon'   => 'fa fa-long-arrow-right',
+    'fields' => array(
+        array(
+            'id'      => 'restly_single_shop_layout',
+            'type'    => 'select',
+            'title'   => esc_html__('Single Shop Layout', 'restly'),
+            'options' => array(
+                'grid'          => esc_html__('Full Width', 'restly'),
+                'left-sidebar'  => esc_html__('Left Sidebar', 'restly'),
+                'right-sidebar' => esc_html__('Right Sidebar', 'restly'),
+            ),
+            'default' => 'grid',
+            'desc'    => esc_html__('Select Single Shop page layout.', 'restly'),
+        ),
+        array(
+            'id'       => 'restly_single_shop_banner_enable',
+            'type'     => 'switcher',
+            'title'    => esc_html__('Enable Banner', 'restly'),
+            'default'  => true,
+            'text_on'  => esc_html__('Yes', 'restly'),
+            'text_off' => esc_html__('No', 'restly'),
+            'desc'     => esc_html__('Hide / Show Banner.', 'restly'),
+        ),
+        array(
+            'type'    => 'subheading',
+            'content' => esc_html__('Single Shop Page Color Options', 'restly'),
+        ),
+        array(
+            'id'                    => 'restly_single_shop_body_bg',
+            'type'                  => 'background',
+            'title'                 => esc_html__('Shop Page Background', 'restly'),
+            'background_gradient'   => true,
+            'background_origin'     => false,
+            'background_clip'       => false,
+            'background_blend-mode' => false,
+            'output'    => '.single.single-product',
+            'subtitle'  => esc_html__('Select The Background color for Shop Page', 'restly'),
+        ),
+        array(
+            'id'     => 'restly_single_shop_css_group',
+            'type'   => 'fieldset',
+            'title'  => esc_html__('Single Shop Color', 'restly'),
+            'subtitle'  => esc_html__('Add Color For Single Shop Page', 'restly'),
+            'fields' => array(
+              array(
+                'id'    => 'restly_signle_shop_title_color',
+                'type'  => 'color',
+                'title' => esc_html__('Title Color', 'restly'),
+                'subtitle' => esc_html__('Add Color for Title', 'restly'),
+                'output'  => array('.single-product div.product .product_title','.single-product h1','.single-product h2','.single-product h3','.single-product h4'),
+              ),
+              array(
+                'id'      => 'restly_signle_shop_link_color',
+                'type'    => 'link_color',
+                'title'   => esc_html__('Link Color', 'restly'),
+                'subtitle'   => esc_html__('Add All Links Color', 'restly'),
+                'output'  => array('.single.single-product .woo-single-post a','.nft-colle-author a', '.woo-single-post .product-item .product-info .product-holder .woocommerce-loop-product__title','.single.single-product ul.product_list_widget li a'),
+              ),
+              array(
+                'id'    => 'restly_single_shop_content_color',
+                'type'  => 'color',
+                'title' => esc_html__('Content Color', 'restly'),
+                'subtitle' => esc_html__('Add Content Color', 'restly'),
+                'output'  => array('.single-product .nft-extranal-info span','.single-product .woo-single-post p','.woo-single-summery .product_meta span'),
+              ),
+              array(
+                'id'    => 'restly_single_shop_price_color',
+                'type'  => 'color',
+                'title' => esc_html__('Price & Review Color', 'restly'),
+                'subtitle' => esc_html__('Add Color for Price and Reivew', 'restly'),
+                'output'  => array('.single-product .star-rating:before','.single-product.star-rating span:before','.single-product .product-item .product-info .product-holder .single-product-loop-product__title:hover','.woo-single-pos p.stars a','.single-product div.product p.price','.single-product .star-rating span:before','.single-product p.stars a','.single.single-product ul.products li.product .price','.woo-single-summery p.price span','.single-product span.woocommerce-Price-amount.amount'),
+              ),
+            ),
+        ),
+        array(
+            'id'     => 'restly_single_shop_item_btns_grup',
+            'type'   => 'fieldset',
+            'title'  => esc_html__('Button Color Options', 'restly'),
+            'subtitle'  => esc_html__('Add Color For Shop Page Button', 'restly'),
+            'fields' => array(
+              array(
+                'id'    => 'restly_single_shop_item_btns_color',
+                'type'  => 'color',
+                'title' => esc_html__('Button Color', 'restly'),
+                'output'  => array('.woo-single-summery button.button.alt','.woocommerce div.product .woocommerce-tabs ul.tabs li a','.woocommerce #respond input#submit','.single-product .product-item .product-img .product-overlay .product-content a:hover','.single-product a.button'),
+              ),
+              array(
+                'id'                              => 'restly_shop_item_btns_bgcolor',
+                'type'                            => 'background',
+                'title'                           => esc_html__('Button Background', 'restly'),
+                'background_gradient'             => true,
+                'background_origin'               => true,
+                'background_clip'                 => true,
+                'background_blend_mode'           => true,
+                'output'  => array('.woo-single-summery button.button.alt','.woocommerce div.product .woocommerce-tabs ul.tabs li a','.woocommerce #respond input#submit','.single-product .product-item .product-img .product-overlay .product-content a:hover','.single-product a.button'),
+              ),
+              array(
+                'id'    => 'restly_single_shop_item_btns_hcolor',
+                'type'  => 'color',
+                'title' => esc_html__('Hover Button', 'restly'),
+                'output'  => array('.woo-single-summery button.button.alt:hover','.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover','.woocommerce div.product .woocommerce-tabs ul.tabs li.active a','.woocommerce #respond input#submit:hover','.single-product .product-item .product-img .product-overlay .product-content a','.single-product a.button:hover'),
+              ),
+              array(
+                'id'                              => 'restly_shop_item_btns_hbgcolor',
+                'type'                            => 'background',
+                'title'                           => esc_html__('Button Hover Background', 'restly'),
+                'background_gradient'             => true,
+                'background_origin'               => true,
+                'background_clip'                 => true,
+                'background_blend_mode'           => true,
+                'output'  => array('.woo-single-summery button.button.alt:hover','.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover','.woocommerce div.product .woocommerce-tabs ul.tabs li.active a','.woocommerce #respond input#submit:hover','.single-product .product-item .product-img .product-overlay .product-content a','.single-product a.button:hover'),
+              ),
+            ),
+        ),
+    )
+));

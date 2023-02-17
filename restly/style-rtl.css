@@ -1,0 +1,439 @@
+/*!
+Theme Name: Restly
+Theme URI: http://wptf.themepul.com/restly
+Author: Themepul
+Author URI: https://themepul.com
+Description: Themepul team presents absolutely fresh and powerful WordPress theme. It combines new technologies and functional design that helps to showcase your content in better way. This WordPress theme is developed with attention to details, so you can create effective presentation of a website easily. Enjoy building web pages with our product!
+Version: 1.0.9
+Tested up to: 5.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: restly
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Restly is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+
+/* Header */
+
+.office-time {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.social-icons ul li:first-child {
+    margin-left: 20px;
+}
+
+.top-header-right {
+    text-align: left;
+}
+
+.office-time i {
+    margin-left: 8px;
+}
+
+.header-one .logo-area.logobg {
+    padding: 31px 51px 28px 100px;
+}
+
+.main-header.header-fluid .nav-menu {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.nav-menu .ms-auto {
+    margin-left: auto !important;
+    margin-right: 30px !important;
+}
+
+.header-two .main-header-right {
+    border-right: 1px solid #4e597b;
+    border-left-color: transparent;
+}
+
+.header-four .button.search-open {
+    margin-right: 0;
+    margin-left: 30px;
+}
+
+.header-five.header-four .button.search-open {
+    color: #10171d;
+}
+
+.header-search-popup-content input[type="search"] {
+    padding-right: 90px;
+}
+
+.widget form.search-form input {
+    padding-right: 66px;
+}
+
+.post-meta-box ul li i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.post-share label {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.sidebar-widget-area h2.widget-title:after {
+    right: 0;
+}
+
+.sidebar-widget-area h2.widget-title:before {
+    left: 0;
+    right: 15px;
+}
+
+.restly-widget-post-thum-content {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.widget ul li>span.number {
+    float: left;
+}
+
+.widget.widget_archive ul li a:before,
+.widget.widget_categories ul li a:before,
+.widget.widget_pages ul li a:before,
+.widget.widget_nav_menu ul li a:before {
+    top: -3px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.restly-widget-banner-wrapper .restly-banner-btn a i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.ft2-icon {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.company-subscribe-widget p {
+    padding-right: 0;
+}
+
+.company-contact-widget ul li i {
+    left: auto;
+    right: 0;
+}
+
+.footer-widtet.contact-widget {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.company-contact-widget ul li {
+    padding-left: 0;
+    padding-right: 28px;
+}
+
+.company-info-widget {
+    padding-right: 0;
+}
+
+.company-info-widget ul li {
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+.site-info {
+    text-align: left;
+}
+
+.footer-top-area .ft-top-item {
+    border-right: none;
+    border-left: 1px solid #223452;
+}
+
+.single-comment {
+    padding-right: 100px;
+    padding-left: 50px;
+}
+
+.comment-author {
+    left: auto;
+    right: 0;
+}
+
+.comment-reply a i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.cform-input.message:before {
+    right: auto;
+    left: 19px;
+}
+
+.stellarnav ul ul ul {
+    right: 220px;
+    left: auto;
+}
+
+.stellarnav.desktop ul li.mega ul ul {
+    right: 0;
+}
+
+.restly-blog-post-author img {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.restly-blog-post-content .post-meta-item ul li i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.restly-testimonial-quote {
+    right: auto;
+    left: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select,
+.restly-home-banner-forms .form-input.inputlist,
+.restly-testimonial-dec P,
+.stellarnav.desktop>ul>li.mega>ul,
+.stellarnav.desktop>ul>li.mega>ul li.has-sub ul,
+.main-navigation ul ul.sub-menu li a,
+.restly-blog-post-title a,
+.restly-post-dec,
+.comment-left-meta,
+.footer-two .subscribe-widget,
+.footer-three .subscribe-widget,
+.post-meta-item,
+.restly-blog-one .restly-blog-post-author,
+.form-input.inputlist {
+    text-align: right;
+}
+
+.testi-adec {
+    margin-left: 0;
+    margin-right: 30px;
+}
+
+.restly-input:after,
+.restly-input.message:after {
+    right: auto !important;
+    left: 20px;
+}
+
+.restly-subscribe-innter .mc4wp-form-fields input[type=email] {
+    padding-right: 158px;
+}
+
+.restly-blog-post-content .post-meta-item ul li {
+    margin-right: 0;
+    margin-left: 25px;
+}
+
+form.woocommerce-product-search input {
+    padding-right: 57px;
+    text-align: right;
+}
+
+.restly-product-list-view .product-info .product-overlay,
+.restly-product-list-view .prodcut-list-price,
+.restly-product-list-view .prodcut-list-rating,
+.restly-product-list-view .product-info .product-overlay,
+.restly-product-list-view .prodcut-list-price {
+    float: right !important;
+}
+
+.restly-product-list-view .prodcut-list-rating {
+    float: right;
+}
+
+.woocommerce.restly-product-list-view ul.products li.product,
+.woocommerce-page.restly-product-list-view ul.products li.product {
+    margin: 0 !important
+}
+
+.restly-shop-list {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.woocommerce .products .star-rating {
+    text-align: right;
+    margin: 7px 0 0 0 !important;
+}
+
+.restly-protfolio-info-list ul li {
+    padding-right: 25px;
+}
+
+.restly-protfolio-info-list {
+    text-align: right;
+}
+
+.restly-protfolio-info-list ul li:after {
+    left: auto;
+    right: 0;
+}
+
+.rtl .main-navigation ul li a {
+    padding: 10px;
+    text-align: right;
+}
+
+.rtl .stellarnav .dd-toggle {
+    right: auto;
+    left: 0;
+}
+
+.restly-portfolio-three-slides {
+    left: 0;
+    right: 32%;
+}
+
+.restly-portfolio-static-contents h2 {
+    padding-right: 0;
+}
+
+.restly-portfolio-three .owl-nav {
+    left: auto;
+    right: -390px;
+}
+
+.post-gallerys .slick-slide {
+    float: left;
+    direction: ltr;
+}
+
+.restly-widget-banner-wrapper {
+    text-align: right;
+}
+
+.restly-cinfo-dec {
+    margin-right: 15px;
+}
+
+.footer-top-area {
+    margin-top: 35px;
+}
+
+.mc4wp-form-fields input[type=email] {
+    padding-right: 66px;
+}
+
+.rtl .header-five .container nav:after {
+    content: "";
+    left: -16px;
+    right: auto;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .office-time {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .header-top ul li {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1199px) {
+    .restly-portfolio-three-slides {
+        left: 0;
+        right: 0;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    a.menu-toggle.full {
+        right: auto;
+        float: left;
+        left: 0;
+    }
+    header .button .theme-btns {
+        right: auto;
+        left: 0;
+        margin-left: 74px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-three .header-top .top-header-right .office-time,
+    .header-three .header-top .top-header-right .social-icons {
+        display: inline;
+    }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1800px) {
+    .restly-portfolio-three-slides {
+        left: 0;
+        right: 0;
+        margin-top: 0
+    }
+    .restly-portfolio-three .owl-nav,
+    .restly-portfolio-static-area {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    .rtl header.header-three .button .theme-btns {
+        top: 5px;
+    }
+    .rtl .header-three a.menu-toggle.full {
+        top: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .rtl .header-three a.menu-toggle.full {
+        top: 0;
+    }
+}
+
+.rtl .header-five nav#site-navigation {
+    padding: 10px 0;
+}
+
+.rtl .stellarnav.mobile>ul>li>a {
+    text-align: right;
+}
+
+.rtl .stellarnav .dd-toggle {
+    right: auto;
+    left: 0;
+}

@@ -1,0 +1,22 @@
+<wpml-config>
+    <admin-texts>
+        <key name="restly_Theme_Option">
+            <key name="restly_copyright_text" />
+            <key name="restly_not_found_text" />
+            <key name="restly_blog_title" />
+            <key name="restly_error_page_title" />
+            <key name="restly_error_page_button_text" />
+            <key name="restly_blogc_title" />
+            <key name="restly_blog_home_title" />
+            <key name="restly_blog_home_stitle" />
+            <key name="restly_team_title" />
+			<key name="restly_ft1_top_label" />
+			<key name="restly_ft1_top_dec" />
+			<key name="restly_left_topH_label" />
+			<key name="restly_left_topH_dec" />
+			<key name="restly_top_hopen_text" />
+			<key name="restly_top_hotline_text" />
+			<key name="restly_top_hsocial_label" />
+        </key>
+    </admin-texts>
+</wpml-config>
