@@ -88,7 +88,7 @@ export class LicenseService {
 
       result.push({
         productKey: productKey,
-        name: plugin.name,
+        name: plugin.pluginName,
         unused: unusedLicenses.length,
         total: licenses.length,
       });
