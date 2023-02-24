@@ -1,7 +1,5 @@
 export class PluginDto {
-  id: number;
-  name: string;
-  // petrelVersion: string;
-  createdAt: Date;
-  productKey: string;
+  pluginID: number;
+  pluginName: string;
+  SWID: string;
 }

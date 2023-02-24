@@ -133,7 +133,7 @@ export class PluginVersionController {
     );
     console.log(plugin);
     const pluginFileName =
-      slugify(`${plugin.name}-${pluginVersion.version}`) + '.pip';
+      slugify(`${plugin.pluginName}-${pluginVersion.version}`) + '.pip';
 
     return new StreamableFile(pluginFile, {
       disposition: `attachment; filename="${pluginFileName}"`,

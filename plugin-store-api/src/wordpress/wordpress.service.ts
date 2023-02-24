@@ -4,14 +4,15 @@ import { InjectDataSource } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { UserDto } from './dto/user.dto';
 import * as hasher from 'wordpress-hash-node';
-import WooCommerceRestApi from '@woocommerce/woocommerce-rest-api';
 import { PluginDto } from './dto/plugin.dto';
-import { PluginRestDto } from './dto/plugin-rest.dto';
+import { catchError, firstValueFrom } from 'rxjs';
+import { HttpService } from '@nestjs/axios';
 
 @Injectable()
 export class WordpressService {
   constructor(
     private jwtService: JwtService,
+    private readonly httpService: HttpService,
     @InjectDataSource('wordpressDb')
     private wordpressDataSource: DataSource,
   ) {}
@@ -104,74 +105,44 @@ export class WordpressService {
   async findPluginByProductKey(productKey: string) {
     const plugins = await this.findPlugins();
 
-    return plugins.find((plugin) => plugin.productKey == productKey);
+    return plugins.find((plugin) => plugin.SWID == productKey);
   }
 
   async findPluginById(id: number): Promise<PluginDto> {
-    const api = new WooCommerceRestApi({
-      url: process.env.WOOCOMMERCE_API_URL,
-      consumerKey: process.env.WOOCOMMERCE_CK,
-      consumerSecret: process.env.WOOCOMMERCE_CS,
-      version: 'wc/v3',
-    });
-
-    return await api
-      .get(`products/${id}`)
-      .then((response) => {
-        const data = response.data as PluginRestDto;
-
-        const plugin = new PluginDto();
-        plugin.id = data.id;
-        plugin.name = data.name;
-        plugin.createdAt = data.date_created;
-        plugin.productKey = data.attributes[0]?.options[0];
-
-        return plugin;
-      })
-      .catch((error) => {
-        // TODO:
-        this.logger.error(error);
-        return null;
-      });
+    const { data } = await firstValueFrom(
+      this.httpService
+        .get<PluginDto>(
+          `http://${process.env.WOOCOMMERCE_API_URL}/wp-json/wp/v3/plugins/${id}`,
+        )
+        .pipe(
+          catchError((error) => {
+            this.logger.error(error.response.data);
+            throw 'An error happened!';
+          }),
+        ),
+    );
+    return data;
   }
 
   async findPlugins(): Promise<PluginDto[]> {
-    const api = new WooCommerceRestApi({
-      url: process.env.WOOCOMMERCE_API_URL,
-      consumerKey: process.env.WOOCOMMERCE_CK,
-      consumerSecret: process.env.WOOCOMMERCE_CS,
-      version: 'wc/v3',
-    });
-
-    return await api
-      .get(`products/`)
-      .then((response) => {
-        const data = response.data as PluginRestDto[];
-
-        const plugins = [];
-
-        for (const item of data) {
-          const plugin = new PluginDto();
-          plugin.id = item.id;
-          plugin.name = item.name;
-          plugin.createdAt = item.date_created;
-          plugin.productKey = item.attributes[0].options[0];
-
-          plugins.push(plugin);
-        }
-
-        return plugins;
-      })
-      .catch((error) => {
-        // TODO:
-        this.logger.error(error);
-        return null;
-      });
+    const { data } = await firstValueFrom(
+      this.httpService
+        .get<PluginDto[]>(
+          `http://${process.env.WOOCOMMERCE_API_URL}/wp-json/wp/v3/plugins`,
+        )
+        .pipe(
+          catchError((error) => {
+            this.logger.error(error.response.data);
+            throw 'An error happened!';
+          }),
+        ),
+    );
+    return data;
   }
 
   async checkPluginByProductKey(productKey: string) {
     const plugins = await this.findPlugins();
 
-    return !!plugins.find((plugin) => plugin.productKey == productKey);
+    return !!plugins.find((plugin) => plugin.SWID == productKey);
   }
 }
