@@ -112,11 +112,14 @@ export class WordpressService {
     const { data } = await firstValueFrom(
       this.httpService
         .get<PluginDto>(
-          `http://${process.env.WOOCOMMERCE_API_URL}/wp-json/wp/v3/plugins/${id}`,
+          `${process.env.WOOCOMMERCE_API_URL}/wp-json/wp/v3/plugins/${id}`,
+          {
+            headers: { Authorization: `Bearer ${process.env.WOOCOMMERCE_JWT}` },
+          },
         )
         .pipe(
           catchError((error) => {
-            this.logger.error(error.response.data);
+            this.logger.error(error);
             throw 'An error happened!';
           }),
         ),
@@ -128,11 +131,14 @@ export class WordpressService {
     const { data } = await firstValueFrom(
       this.httpService
         .get<PluginDto[]>(
-          `http://${process.env.WOOCOMMERCE_API_URL}/wp-json/wp/v3/plugins`,
+          `${process.env.WOOCOMMERCE_API_URL}/wp-json/wp/v3/plugins`,
+          {
+            headers: { Authorization: `Bearer ${process.env.WOOCOMMERCE_JWT}` },
+          },
         )
         .pipe(
           catchError((error) => {
-            this.logger.error(error.response.data);
+            this.logger.error(error);
             throw 'An error happened!';
           }),
         ),
