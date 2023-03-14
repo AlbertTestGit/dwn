@@ -1,0 +1,128 @@
+2023-03-14T06:05:31+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:05:56+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:09:12+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:09:33+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:10:05+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:27:28+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:34:00+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:34:12+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T06:52:55+00:00 CRITICAL Uncaught Error: Object of class CurlHandle could not be converted to string in /var/www/html/wp-content/themes/restly/page-manager.php:33
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(106): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown в /var/www/html/wp-content/themes/restly/page-manager.php на строке 33
+
+2023-03-14T08:09:09+00:00 CRITICAL Uncaught Error: Class "Elementor\TemplateLibrary\Source_Base" not found in /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php:9
+Stack trace:
+#0 /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/restly-template-library.php(6): include()
+#1 /var/www/html/wp-content/plugins/restlycore/restlycore.php(18): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-admin/includes/plugin.php(2314): include_once('/var/www/html/w...')
+#3 /var/www/html/wp-admin/includes/plugin.php(661): plugin_sandbox_scrape('restlycore/rest...')
+#4 /var/www/html/wp-admin/plugins.php(58): activate_plugin('restlycore/rest...', 'https://dev-sho...', false)
+#5 {main}
+  thrown в /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php на строке 9
+
+2023-03-14T08:09:09+00:00 CRITICAL Uncaught Error: Class "Elementor\TemplateLibrary\Source_Base" not found in /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php:9
+Stack trace:
+#0 /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/restly-template-library.php(6): include()
+#1 /var/www/html/wp-content/plugins/restlycore/restlycore.php(18): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-admin/includes/plugin.php(2314): include_once('/var/www/html/w...')
+#3 /var/www/html/wp-admin/plugins.php(192): plugin_sandbox_scrape('restlycore/rest...')
+#4 {main}
+  thrown в /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php на строке 9
+
+2023-03-14T08:09:09+00:00 CRITICAL Uncaught Error: Class "Elementor\TemplateLibrary\Source_Base" not found in /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php:9
+Stack trace:
+#0 /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/restly-template-library.php(6): include()
+#1 /var/www/html/wp-content/plugins/restlycore/restlycore.php(18): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-admin/includes/plugin.php(2314): include_once('/var/www/html/w...')
+#3 /var/www/html/wp-admin/plugins.php(192): plugin_sandbox_scrape('restlycore/rest...')
+#4 {main}
+  thrown в /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php на строке 9
+
+2023-03-14T08:09:11+00:00 CRITICAL Uncaught Error: Class "Elementor\TemplateLibrary\Source_Base" not found in /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php:9
+Stack trace:
+#0 /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/restly-template-library.php(6): include()
+#1 /var/www/html/wp-content/plugins/restlycore/restlycore.php(18): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-admin/includes/plugin.php(2314): include_once('/var/www/html/w...')
+#3 /var/www/html/wp-admin/includes/plugin.php(661): plugin_sandbox_scrape('restlycore/rest...')
+#4 /var/www/html/wp-admin/plugins.php(58): activate_plugin('restlycore/rest...', 'https://dev-sho...', false)
+#5 {main}
+  thrown в /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php на строке 9
+
+2023-03-14T08:09:11+00:00 CRITICAL Uncaught Error: Class "Elementor\TemplateLibrary\Source_Base" not found in /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php:9
+Stack trace:
+#0 /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/restly-template-library.php(6): include()
+#1 /var/www/html/wp-content/plugins/restlycore/restlycore.php(18): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-admin/includes/plugin.php(2314): include_once('/var/www/html/w...')
+#3 /var/www/html/wp-admin/plugins.php(192): plugin_sandbox_scrape('restlycore/rest...')
+#4 {main}
+  thrown в /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php на строке 9
+
+2023-03-14T08:09:11+00:00 CRITICAL Uncaught Error: Class "Elementor\TemplateLibrary\Source_Base" not found in /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php:9
+Stack trace:
+#0 /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/restly-template-library.php(6): include()
+#1 /var/www/html/wp-content/plugins/restlycore/restlycore.php(18): require_once('/var/www/html/w...')
+#2 /var/www/html/wp-admin/includes/plugin.php(2314): include_once('/var/www/html/w...')
+#3 /var/www/html/wp-admin/plugins.php(192): plugin_sandbox_scrape('restlycore/rest...')
+#4 {main}
+  thrown в /var/www/html/wp-content/plugins/restlycore/inc/restly-elementor-template-library/templates/api.php на строке 9
+

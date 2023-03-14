@@ -1,0 +1,285 @@
+# Translation of Plugins - Login/Signup Popup ( Inline Form + Woocommerce ) - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Login/Signup Popup ( Inline Form + Woocommerce ) - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-02-19 15:27:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Login/Signup Popup ( Inline Form + Woocommerce ) - Stable (latest release)\n"
+
+#: includes/class-xoo-el-form-handler.php:767
+msgid "To set your password, visit the following address:"
+msgstr "Чтобы установить пароль, посетите следующий адрес:"
+
+#: includes/class-xoo-el-form-handler.php:573
+msgid "Your password has been reset successfully! Please <a class=\"xoo-el-login-tgr\">Login</a>"
+msgstr "Ваш пароль успешно сброшен! Пожалуйста, <a class=\"xoo-el-login-tgr\">Войдите</a>"
+
+#: includes/xoo-el-functions.php:319
+msgid "%s cannot be empty"
+msgstr "%s не может быть пустым"
+
+#: includes/xoo-el-functions.php:315
+msgid "Please check %s"
+msgstr "Проверьте %s"
+
+#: templates/xoo-el-form.php:27
+msgid "Continue to resetting password"
+msgstr "Продолжить сброс пароля"
+
+#: templates/global/xoo-el-resetpw-section.php:87
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+#: templates/global/xoo-el-resetpw-section.php:67
+msgid "Please enter a new password"
+msgstr "Введите новый пароль"
+
+#: includes/class-xoo-el-form-handler.php:544
+#: templates/global/xoo-el-resetpw-section.php:63
+msgid "This key is invalid or has already been used. Please reset your password again if needed."
+msgstr "Этот ключ недействителен или уже использовался. Пожалуйста, сбросьте свой пароль еще раз, если это необходимо."
+
+#: templates/global/xoo-el-resetpw-section.php:25
+msgid "New Password"
+msgstr "Новый пароль"
+
+#. Description of the plugin
+msgid "Allow users to login/signup using interactive popup design."
+msgstr "Предоставьте пользователям возможность войти/зарегистрироваться, используя интерактивный дизайн всплывающего окна."
+
+#: xoo-form-fields-fw/admin/class-xoo-aff-fields.php:1248
+msgid "%s should be in multiple of %s."
+msgstr "%s должно быть кратным %s."
+
+#: xoo-form-fields-fw/admin/class-xoo-aff-fields.php:1243
+msgid "%s cannot be more than %s."
+msgstr "%s не может быть больше, чем %s."
+
+#: xoo-form-fields-fw/admin/class-xoo-aff-fields.php:1238
+msgid "%s should be minimum %s."
+msgstr "%s не может быть менее %s."
+
+#: xoo-form-fields-fw/admin/class-xoo-aff-fields.php:1233
+msgid "%s cannot exceed %s characters."
+msgstr "%s не может быть длиннее %s символов."
+
+#: xoo-form-fields-fw/admin/class-xoo-aff-fields.php:1228
+msgid "%s needs to be minimum %s characters."
+msgstr "%s должно быть не короче %s символов."
+
+#: xoo-form-fields-fw/includes/class-xoo-aff.php:110
+msgid "Please enter a stronger password."
+msgstr "Пожалуйста, введите более сложный пароль."
+
+#: xoo-form-fields-fw/admin/class-xoo-aff-fields.php:1216
+msgid "Please check %s."
+msgstr "Пожалуйста, проверьте %s"
+
+#: includes/class-xoo-el-form-handler.php:258
+msgid "Your account was created successfully and a password has been sent to your email address"
+msgstr "Ваша учетная запись была успешно создана и пароль был отправлен на ваш адрес электронной почты"
+
+#: includes/class-xoo-el-form-handler.php:253
+msgid "Registration successful. Please <a class=\"xoo-el-login-tgr\">Login</a>"
+msgstr "Регистрация прошла успешно. Пожалуйста, <a class=\"xoo-el-login-tgr\">Войдите</a>"
+
+#: includes/class-xoo-el-form-handler.php:697
+msgid "Possible reason: your host may have disabled the mail() function."
+msgstr "Возможная причина: на сервере отключена функция mail()."
+
+#: includes/class-xoo-el-form-handler.php:697
+msgid "The email could not be sent."
+msgstr "Письмо не может быть отправлено."
+
+#. translators: Password reset email subject. %s: Site name
+#: includes/class-xoo-el-form-handler.php:666
+msgid "[%s] Password Reset"
+msgstr "[%s] Пароль сброшен"
+
+#: includes/class-xoo-el-form-handler.php:662
+msgid "To reset your password, visit the following address:"
+msgstr "Чтобы сбросить пароль, перейдите по следующей ссылке:"
+
+#: includes/class-xoo-el-form-handler.php:661
+msgid "If this was a mistake, just ignore this email and nothing will happen."
+msgstr "Если это сообщение было ошибкой, просто проигнорируйте это письмо."
+
+#. translators: %s: user login
+#. translators: %s: User login.
+#: includes/class-xoo-el-form-handler.php:660
+#: includes/class-xoo-el-form-handler.php:766
+msgid "Username: %s"
+msgstr "Имя пользователя: %s"
+
+#. translators: %s: site name
+#: includes/class-xoo-el-form-handler.php:658
+msgid "Site Name: %s"
+msgstr "Название сайта: %s"
+
+#: includes/class-xoo-el-form-handler.php:656
+msgid "Someone has requested a password reset for the following account:"
+msgstr "Кто-то запросил сброс пароля для следующей учетной записи:"
+
+#: includes/class-xoo-el-form-handler.php:631
+msgid "<strong>ERROR</strong>: Invalid username or email."
+msgstr "<strong>ОШИБКА</strong>: Неправильное имя пользователя или e-mail."
+
+#: includes/class-xoo-el-form-handler.php:610
+msgid "<strong>ERROR</strong>: There is no user registered with that email address."
+msgstr "<strong>ОШИБКА</strong>: Пользователь с таким адресом электронной почты не зарегистрирован."
+
+#: includes/class-xoo-el-form-handler.php:606
+msgid "<strong>ERROR</strong>: Enter a username or email address."
+msgstr "<strong>ОШИБКА</strong>: Введите имя пользователя или адрес электронной почты."
+
+#: includes/class-xoo-el-form-handler.php:503
+msgid "A password reset email has been sent to the email address on file for your account, but may take several minutes to show up in your inbox. Please wait at least 10 minutes before attempting another reset."
+msgstr "Письмо для сброса пароля было отправлено на адрес электронной почты, указанный в вашей учетной записи, но это может занять несколько минут, чтобы отобразиться в вашей папке входящих сообщений. Пожалуйста, подождите не менее 10 минут, прежде чем пытаться сделать еще один сброс.."
+
+#: includes/class-xoo-el-form-handler.php:343
+msgid "Couldn&#8217;t register you&hellip; please contact us if you continue to have problems."
+msgstr "Регистрация не удалась&hellip; Пожалуйста, сообщите нам, если это проблема повторится."
+
+#: includes/class-xoo-el-form-handler.php:211
+msgid "Please enter an account password."
+msgstr "Пожалуйста, введите пароль учетной записи."
+
+#: includes/class-xoo-el-form-handler.php:318
+msgid "An account is already registered with that username. Please choose another."
+msgstr "Учетная запись уже зарегистрирована с этим именем пользователя. Пожалуйста, выберите другое."
+
+#: includes/class-xoo-el-form-handler.php:314
+msgid "Please enter a valid account username."
+msgstr "Пожалуйста, введите корректное имя пользователя."
+
+#: includes/class-xoo-el-form-handler.php:306
+msgid "An account is already registered with your email address. Please log in."
+msgstr "Учётная запись уже зарегистрирована на ваш адрес электронной почты. Пожалуйста, войдите."
+
+#: includes/class-xoo-el-form-handler.php:302
+msgid "Please provide a valid email address."
+msgstr "Пожалуйста, укажите действующий адрес электронной почты."
+
+#: xoo-form-fields-fw/admin/class-xoo-aff-fields.php:1220
+msgid "%s cannot be empty."
+msgstr "%s не может быть пустым"
+
+#: includes/class-xoo-el-form-handler.php:118
+msgid "Incorrect Email or Username."
+msgstr "Неправильная электронная почта или имя пользователя."
+
+#: templates/global/xoo-el-login-section.php:52
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+#: includes/class-xoo-el-frontend.php:123
+msgid "My account"
+msgstr "Моя учётная запись"
+
+#. Plugin Name of the plugin
+#: admin/class-xoo-el-menu-settings.php:15
+msgid "Login/Signup Popup"
+msgstr "Login/Signup Popup"
+
+#. Author URI of the plugin
+msgid "http://xootix.com"
+msgstr "http://xootix.com"
+
+#. Author of the plugin
+msgid "XootiX"
+msgstr "XootiX"
+
+#. Plugin URI of the plugin
+msgid "http://xootix.com/easy-login-for-woocommerce"
+msgstr "http://xootix.com/easy-login-for-woocommerce"
+
+#: templates/global/xoo-el-resetpw-section.php:33
+msgid "Confirm Password"
+msgstr "Подтвердите пароль"
+
+#: templates/global/xoo-el-header.php:31
+#: templates/global/xoo-el-register-section.php:30
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: templates/global/xoo-el-lostpw-section.php:52
+msgid "Email Reset Link"
+msgstr "Сбросить пароль"
+
+#: templates/global/xoo-el-lostpw-section.php:36
+msgid "Lost your password? Please enter your username or email address. You will receive a link to create a new password via email."
+msgstr "Забыли пароль? Пожалуйста, введите ваше имя пользователя или адрес электронной почты. Вы получите ссылку для создания нового пароля по электронной почте."
+
+#: templates/global/xoo-el-login-section.php:54
+msgid "Forgot Password?"
+msgstr "Забыли пароль?"
+
+#: templates/global/xoo-el-login-section.php:35
+msgid "Password"
+msgstr "Пароль"
+
+#: templates/global/xoo-el-login-section.php:26
+#: templates/global/xoo-el-lostpw-section.php:25
+msgid "Username / Email"
+msgstr "Имя пользователя / электронная почта"
+
+#: templates/global/xoo-el-login-section.php:61
+msgid "Sign In"
+msgstr "Войти"
+
+#: includes/class-xoo-el-frontend.php:152
+msgid "Lost Password"
+msgstr "Восстановить пароль"
+
+#: includes/class-xoo-el-frontend.php:147
+msgid "Signup"
+msgstr "Зарегистрироваться"
+
+#: includes/class-xoo-el-frontend.php:142
+#: includes/class-xoo-el-frontend.php:157 templates/global/xoo-el-header.php:28
+msgid "Login"
+msgstr "Войти"
+
+#: includes/class-xoo-el-frontend.php:128
+#: includes/class-xoo-el-frontend.php:132
+msgid "Logout"
+msgstr "Выйти"
+
+#: includes/class-xoo-el-form-handler.php:248
+msgid "Registration successful"
+msgstr "Регистрация прошла успешно"
+
+#: includes/class-xoo-el-form-handler.php:215
+#: includes/class-xoo-el-form-handler.php:550
+msgid "Passwords don't match"
+msgstr "Пароли не совпадают"
+
+#: includes/class-xoo-el-form-handler.php:134
+msgid "Login successful"
+msgstr "Вход выполнен успешно"
+
+#: includes/class-xoo-el-form-handler.php:110
+msgid "Lost your password?"
+msgstr "Забыли пароль?"
+
+#: includes/class-xoo-el-form-handler.php:90
+msgid "Username is required."
+msgstr "Необходимо ввести имя пользователя."
+
+#: includes/class-xoo-el-form-handler.php:86
+#: includes/class-xoo-el-form-handler.php:90
+msgid "Error:"
+msgstr "Ошибка:"
+
+#: admin/class-xoo-el-menu-settings.php:66
+msgid "Add to menu"
+msgstr "Добавить в меню"
+
+#: admin/class-xoo-el-menu-settings.php:62
+msgid "Select all"
+msgstr "Выбрать всё"

@@ -1,0 +1,43 @@
+
+---Downloaded files---
+The import files for: Default Demo were successfully downloaded!
+Initial max execution time = 60
+Files info:
+Site URL = https://wptf.themepul.co/restly
+Data file = /home1/themepu1/public_html/wptf-themepul-co/restly/wp-content/uploads/2022/07/demo-content-import-file_2022-07-17__10-11-46.xml
+Widget file = /home1/themepu1/public_html/wptf-themepul-co/restly/wp-content/uploads/2022/07/demo-widgets-import-file_2022-07-17__10-11-46.json
+Customizer file = /home1/themepu1/public_html/wptf-themepul-co/restly/wp-content/uploads/2022/07/demo-customizer-import-file_2022-07-17__10-11-46.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
