@@ -8,40 +8,17 @@ services:
       - "5100:3000"
     depends_on:
       - db
-      - wpdb
     environment:
       - DB_HOST=db
-      - DB_PORT=5432
-      - DB_USER=postgres
+      - DB_PORT=3306
+      - DB_USER=shopuser
       - DB_PASS=qwerty123
       - DB_NAME=plugin-store
-      - WP_DB_HOST=192.168.33.36
-      - WP_DB_PORT=3306
-      - WP_DB_USER=root
-      - WP_DB_PASS=
-      - WP_DB_NAME=custom_api
+      - WP_DB_NAME=wordpress
       - JWT_SECRET=vZiXOo3r7IgFtLh3TVtuiKxVtXfqMlAs
       - LICENSE_URL=http://192.168.10.46:10100
-      - WOOCOMMERCE_API_URL=http://192.168.33.36
+      - WOOCOMMERCE_API_URL=http://wordpress
       - WOOCOMMERCE_JWT=eyJhbGciOiJIUzI1NiJ9.e30.IcewD6aHHneV8OmlYIjUYpeOQglvBQ1gK7o51Lfp7xo
-
-  db:
-    container_name: postgres
-    image: postgres:15.1-alpine
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_DB: "plugin-store"
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "qwerty123"
-    volumes:
-      - ./data/db:/var/lib/postgresql/data
-
-  adminer:
-    container_name: adminer
-    image: adminer
-    ports:
-      - "8080:8080"
   
   wordpress:
     container_name: wordpress
@@ -49,26 +26,32 @@ services:
     ports:
       - "80:80"
     environment:
-      WORDPRESS_DB_HOST: wpdb
-      WORDPRESS_DB_USER: wpuser
-      WORDPRESS_DB_PASSWORD: qwerty123
-      WORDPRESS_DB_NAME: wordpressdb
+      - WORDPRESS_DB_HOST=db
+      - WORDPRESS_DB_USER=shopuser
+      - WORDPRESS_DB_PASSWORD=qwerty123
+      - WORDPRESS_DB_NAME=wordpress
     volumes:
       - ./data/wordpress:/var/www/html
-      - ./restly:/var/www/html/wp-content/themes/restly
-      - ./php.ini:/usr/local/etc/php/php.ini
+      - ./data/restly:/var/www/html/wp-content/themes/restly
+      - ./data/php.ini:/usr/local/etc/php/php.ini
     depends_on:
-      - wpdb
+      - db
 
-  wpdb:
+  db:
     container_name: mysql
     image: mysql:8.0.32
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: wordpressdb
-      MYSQL_USER: wpuser
-      MYSQL_PASSWORD: qwerty123
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      - MYSQL_DATABASE=plugin-store
+      - MYSQL_USER=shopuser
+      - MYSQL_PASSWORD=qwerty123
+      - MYSQL_ROOT_PASSWORD=qwerty123
     volumes:
-      - ./data/wpdb:/var/lib/mysql
+      - ./data/db:/var/lib/mysql
+  
+  adminer:
+    container_name: adminer
+    image: adminer
+    ports:
+      - "8080:8080"

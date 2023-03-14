@@ -52,6 +52,7 @@ export class LicenseController {
     }
 
     const unpackedToken = await this.licenseService.unpackToken(token);
+    console.log('ma', unpackedToken);
 
     const license = await this.licenseService.findOrActivateLicense(
       unpackedToken.swid,
@@ -85,6 +86,7 @@ export class LicenseController {
     }
 
     const unpackedToken = await this.licenseService.unpackToken(token);
+    console.log('aa', unpackedToken);
 
     const user = await this.wordpressService.validateUsernameAndPassword(
       unpackedToken.user,

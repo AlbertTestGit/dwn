@@ -13,7 +13,7 @@ import { PluginVersion } from './plugin-version/entities/plugin-version.entity';
       isGlobal: true,
     }),
     TypeOrmModule.forRoot({
-      type: 'postgres',
+      type: 'mysql',
       host: process.env.DB_HOST,
       port: +process.env.DB_PORT,
       username: process.env.DB_USER,
@@ -25,10 +25,10 @@ import { PluginVersion } from './plugin-version/entities/plugin-version.entity';
     TypeOrmModule.forRoot({
       name: 'wordpressDb',
       type: 'mysql',
-      host: process.env.WP_DB_HOST,
-      port: +process.env.WP_DB_PORT,
-      username: process.env.WP_DB_USER,
-      password: process.env.WP_DB_PASS,
+      host: process.env.DB_HOST,
+      port: +process.env.DB_PORT,
+      username: process.env.DB_USER,
+      password: process.env.DB_PASS,
       database: process.env.WP_DB_NAME,
       entities: [],
       synchronize: false,

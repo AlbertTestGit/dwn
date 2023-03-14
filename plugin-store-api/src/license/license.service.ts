@@ -57,7 +57,7 @@ export class LicenseService {
 
   async userLicenseList(userId) {
     const sql: { swid: string }[] = await this.licenseRepository.manager.query(
-      `SELECT DISTINCT "swid" FROM license WHERE "userId"='${userId}';`,
+      `SELECT DISTINCT swid FROM license WHERE userId='${userId}';`,
     );
 
     const productKeys = sql.map((p) => p.swid);
